@@ -10,6 +10,8 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
 
   }
 
@@ -46,4 +48,123 @@
     margin:0;
     margin-bottom: 10px;
   }
+}
+.about-main{
+  background-color: #495e57;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.lemon-description{
+  display:flex;
+  justify-content: space-between;
+  color:white;
+  padding:15px;
+}
+.sushi-pic{
+  max-width: 25%;
+  max-height: 15%;
+  border-radius: 10%;
+  padding:15px;
+}
+
+h1 {
+  color:#f4ce14;
+  padding-left:15px;
+  padding-top:15px;
+  padding-bottom:0px;
+  font-family:Markazi;
+  font-size:xx-large;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.chicago{
+  color:white;
+  padding-left: 15px;
+  font-family:Markazi;
+  font-size: x-large;
+}
+.reserve-button{
+  background-color: #f4ce14;
+  font-weight: bold;
+  text-align: center;
+  border:none;
+  border-radius: 12px;
+  padding:10px;
+  margin:15px;
+  transition-duration: 0.4s;
+}
+.reserve-button:hover {
+  background-color:gray;
+  color:#495e57;
+}
+.special-flex {
+  display: flex;
+  justify-content: space-between;
+  padding:15px;
+}
+.container-flex{
+  display:flex;
+  flex-direction: row;
+  padding:15px;
+}
+.specials-menu{
+  display: flex;
+  flex-direction: column;
+  max-width: 34%;
+}
+.specials-img{
+  padding:5px;
+  max-width:100%;
+  max-height:auto;
+  display:block;
+}
+.specials-title{
+  font-size: 16px;
+  padding:5px;
+
+}
+.specials-price{
+  color:red;
+  margin:5px;
+}
+.specials-des{
+  padding:5px;
+  color:#495e57;
+}
+@media (max-width:768px) {
+  .sushi-pic{
+    border-radius: 20%;
+  }
+  .container-flex{
+    display:flex;
+    flex-direction: column;
+  }
+  .specials-menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 34%;
+  }
+  .specials-img{
+    max-width: 100px;
+    height: 100px;
+    }
+    .specials-des{
+      padding:2px;
+    }
+    .order-des{
+      display:none;
+    }
+    .deli-icon{
+      width:25px;
+      height:25px;
+    }
+}
+.deli-icon{
+  max-width:20px;
+  max-height:auto;
+  padding-top: 0%;
+}
+.order-des{
+  color:#495e57;
 }
