@@ -1,9 +1,20 @@
+import React , { useState } from "react";
+import BookingForm from "./BookingForm.js";
 import foodpic1 from "/Users/bashirbinbash/frontend/reservetableapp/src/images/restauranfood.jpg"
 import greeksalad from "/Users/bashirbinbash/frontend/reservetableapp/src/images/greek salad.jpg"
 import brusche from "/Users/bashirbinbash/frontend/reservetableapp/src/images/Bruschetta copy.jpg"
 import lemon from "/Users/bashirbinbash/frontend/reservetableapp/src/images/lemon dessert.jpg"
 import deli from "/Users/bashirbinbash/frontend/reservetableapp/src/images/deli.png"
+
+
+
 function Main () {
+     const [date,setDate] = useState('');
+     const [time,setTime] = useState('');
+     const [guests,setGuests] = useState(1);
+     const [occasion,setOccasion] = useState('Birthday');
+     const [reservations,setReservations] = useState([]);
+
 return (
      <>
 <main>
@@ -54,6 +65,23 @@ return (
           </p>
           <h3 className="order-des">Order a delivery</h3><img className="deli-icon" src={deli}/>
      </article>
+</section>
+<section>
+     <div>
+     <h1>Reserve a Table Here </h1>
+      <BookingForm
+      date={date}
+      time={time}
+      guests={guests}
+      occasion={occasion}
+      setDate={setDate}
+      setTime={setTime}
+      setGuests={setGuests}
+      setOccasion={setOccasion}
+      reservations={reservations}
+      setReservations={setReservations}
+      />
+     </div>
 </section>
 </main></> )
 }
